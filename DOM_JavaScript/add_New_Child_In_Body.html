@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="thapa">Thapa</p>
+    <p class="welcome">Technical</p>
+    <p class="Welcome">Welcome</p>
+    <p class="welcome">welcome 1</p>
+    <ul><li>Arun</li>
+        <li>Namdev</li>
+        <li>Nitin</li></ul>
+    <script>
+        var para=document.createElement("p");
+        var textNode=document.createTextNode("This is anew Para.");
+        para.appendChild(textNode);
+        console.log(para);
+        document.body.appendChild(para);
+
+        //access first last child
+
+        var list=document.querySelector("ul");
+        console.log(list);
+        console.log(list.firstChild);
+        console.log(list.lastChild);
+
+        var firstsiblings=thapa.nextElementSibling;
+        console.log(firstsiblings)
+        document.write(firstsiblings);
+
+        //find out parent
+        console.log(list.parentNode);
+    </script>
+</body>
+</html>
