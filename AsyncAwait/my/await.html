@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Await</h2>
+    <p id="main"></p>
+    <script>
+        async function myDisplay(){
+            let mypromise=new Promise(function(myresolve,myreject){
+                myresolve("Hello World!!");
+            });
+            document.getElementById("main").innerHTML=await mypromise;
+        }
+        myDisplay();
+    </script>
+    
+</body>
+</html>
